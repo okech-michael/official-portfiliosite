@@ -1,0 +1,11 @@
+[build]
+providers = ["python"]
+
+[build.variables]
+PIP_CACHE_DIR = "/nix/cache/pip"
+
+[[build.commands]]
+run = "pip install -r requirements.txt"
+
+[start]
+cmd = "bash start.sh"

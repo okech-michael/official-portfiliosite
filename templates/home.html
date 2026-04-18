@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Michael Onyango — Software Engineer{% endblock %}
+{% block nav_home %}active{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text" data-animate="fade-up">
+      <div class="hero-badge">Available for opportunities</div>
+      <h1 class="hero-name">Michael<br><span class="accent">Onyango</span></h1>
+      <p class="hero-title">Software Engineer</p>
+      <p class="hero-tagline">Building scalable digital solutions with clean code and intelligent systems.</p>
+      <div class="hero-actions">
+        <a href="{% url 'projects' %}" class="btn btn-primary">View Projects</a>
+        <a href="{% url 'contact' %}" class="btn btn-ghost">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap" data-animate="fade-left">
+      <div class="image-glow"></div>
+      <div class="image-frame">
+        <img src="{% static 'images/mike3.png' %}" alt="Michael Onyango" class="profile-img" onerror="this.style.display='none'; this.parentElement.classList.add('no-img')">
+        <div class="img-placeholder">
+          <span class="placeholder-initials">MO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro-section">
+  <div class="container">
+    <div class="intro-inner" data-animate="fade-up">
+      <p class="intro-text">
+        I'm a full-stack software engineer focused on building reliable, performant web and mobile applications. I thrive on turning complex problems into elegant, user-centric solutions that deliver real-world impact.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS -->
+<section class="highlights-section">
+  <div class="container">
+    <div class="highlights-grid" data-animate="fade-up">
+      <div class="highlight-card">
+        <div class="highlight-icon">&#9670;</div>
+        <p>Full-Stack Development</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">&#9670;</div>
+        <p>Strong Communication</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">&#9670;</div>
+        <p>Leadership — Ajira Digital</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">&#9670;</div>
+        <p>Interpersonal Excellence</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">&#9670;</div>
+        <p>Problem-Solving Focus</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-icon">&#9670;</div>
+        <p>Real-World Impact</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

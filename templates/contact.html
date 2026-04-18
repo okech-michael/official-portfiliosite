@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact — Michael Onyango{% endblock %}
+{% block nav_contact %}active{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner" data-animate="fade-up">
+      <span class="page-label">Get in touch</span>
+      <h1 class="page-title">Let's <span class="accent">Connect</span></h1>
+      <p class="page-subtitle availability-statement">
+        I am open to full-time roles, contract work, and freelance opportunities.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- INFO -->
+      <div class="contact-info" data-animate="fade-up">
+        <h2 class="contact-info-title">Direct Contact</h2>
+        <div class="contact-item">
+          <span class="contact-icon">&#9993;</span>
+          <div>
+            <p class="contact-label">Email</p>
+            <a href="mailto:okechmichael2004@gmail.com" class="contact-value">okechmichael2004@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">&#128222;</span>
+          <div>
+            <p class="contact-label">Phone</p>
+            <a href="tel:+254741145911" class="contact-value">0741 145 911</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">&#128187;</span>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <a href="https://github.com/okech-michael" target="_blank" rel="noopener" class="contact-value">github.com/okech-michael</a>
+          </div>
+        </div>
+
+        <div class="availability-card">
+          <div class="avail-dot"></div>
+          <p>Currently available for new projects</p>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="contact-form-wrap" data-animate="fade-up">
+        <h2 class="contact-info-title">Send a Message</h2>
+        {% if messages %}
+          {% for message in messages %}
+            <div class="form-message {% if message.tags %}{{ message.tags }}{% endif %}">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
+        <form class="contact-form" action="{% url 'contact' %}" method="POST">
+          {% csrf_token %}
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Projects — Michael Onyango{% endblock %}
+{% block nav_projects %}active{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner" data-animate="fade-up">
+      <span class="page-label">What I've built</span>
+      <h1 class="page-title">My <span class="accent">Projects</span></h1>
+      <p class="page-subtitle">Production deployments, real users, real problems solved.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="featured-projects">
+  <div class="container">
+    <h2 class="section-heading" data-animate="fade-up">Featured Work</h2>
+
+    <!-- Dawafront -->
+    <div class="featured-card" data-animate="fade-up">
+      <div class="featured-card-preview">
+        <div class="preview-browser">
+          <div class="browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="browser-url">dawafront-hospital.up.railway.app</span>
+          </div>
+          <div class="preview-content healthcare-preview">
+            <div class="preview-icon">&#9877;</div>
+            <p>Healthcare Platform</p>
+          </div>
+        </div>
+      </div>
+      <div class="featured-card-info">
+        <span class="project-label">Featured · Healthcare</span>
+        <h3 class="project-title">Dawafront Healthcare Website</h3>
+        <p class="project-desc">A comprehensive healthcare web platform designed to streamline hospital-patient interactions. Built with Django, deployed on Railway.</p>
+        <div class="project-stack">
+          <span>Django</span><span>Python</span><span>HTML/CSS</span><span>Railway</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://dawafront-hospital.up.railway.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo ↗</a>
+          <a href="https://github.com/okech-michael/dawafront-hospital" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apex Construction -->
+    <div class="featured-card featured-card-reverse" data-animate="fade-up">
+      <div class="featured-card-preview">
+        <div class="preview-browser">
+          <div class="browser-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="browser-url">apex-construction-ltd-company.up.railway.app</span>
+          </div>
+          <div class="preview-content construction-preview">
+            <div class="preview-icon">&#9962;</div>
+            <p>Construction Company</p>
+          </div>
+        </div>
+      </div>
+      <div class="featured-card-info">
+        <span class="project-label">Featured · Corporate</span>
+        <h3 class="project-title">Apex Construction Website</h3>
+        <p class="project-desc">A professional corporate website for a construction company. Showcases services, portfolio, and contact functionality with a polished UI.</p>
+        <div class="project-stack">
+          <span>Django</span><span>JavaScript</span><span>CSS3</span><span>Railway</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://apex-construction-ltd-company.up.railway.app/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo ↗</a>
+          <a href="https://github.com/okech-michael/apex-construction" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">View Code</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- OTHER PROJECTS -->
+<section class="other-projects">
+  <div class="container">
+    <h2 class="section-heading" data-animate="fade-up">Other Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card" data-animate="fade-up">
+        <div class="project-card-top">
+          <span class="project-card-icon">&#128273;</span>
+          <div class="project-card-links">
+            <a href="https://github.com/okech-michael/KaziVerify" target="_blank" rel="noopener" title="View Code">&#60;/&#62;</a>
+          </div>
+        </div>
+        <h3 class="project-card-title">KaziVerify</h3>
+        <p class="project-card-desc">A verification platform for freelancers and digital workers — establishing credibility in the gig economy.</p>
+        <div class="project-card-tags"><span>Python</span><span>Django</span></div>
+      </div>
+
+      <div class="project-card" data-animate="fade-up">
+        <div class="project-card-top">
+          <span class="project-card-icon">&#129504;</span>
+          <div class="project-card-links">
+            <a href="https://github.com/okech-michael/EDUSYNC-AI" target="_blank" rel="noopener" title="View Code">&#60;/&#62;</a>
+          </div>
+        </div>
+        <h3 class="project-card-title">EduSync AI</h3>
+        <p class="project-card-desc">An AI-powered education platform built to personalise and synchronise learning experiences for students.</p>
+        <div class="project-card-tags"><span>AI</span><span>Python</span><span>React</span></div>
+      </div>
+
+      <div class="project-card" data-animate="fade-up">
+        <div class="project-card-top">
+          <span class="project-card-icon">&#128138;</span>
+          <div class="project-card-links">
+            <span class="coming-soon">In Progress</span>
+          </div>
+        </div>
+        <h3 class="project-card-title">AfyaLink</h3>
+        <p class="project-card-desc">A digital health-linking platform connecting patients with community health services and providers.</p>
+        <div class="project-card-tags"><span>Healthcare</span><span>Django</span></div>
+      </div>
+
+      <div class="project-card" data-animate="fade-up">
+        <div class="project-card-top">
+          <span class="project-card-icon">&#128225;</span>
+          <div class="project-card-links">
+            <span class="coming-soon">In Progress</span>
+          </div>
+        </div>
+        <h3 class="project-card-title">SMACOM</h3>
+        <p class="project-card-desc">A smart community communication tool designed to improve local coordination and information flow.</p>
+        <div class="project-card-tags"><span>Node.js</span><span>React</span></div>
+      </div>
+
+      <div class="project-card" data-animate="fade-up">
+        <div class="project-card-top">
+          <span class="project-card-icon">&#127979;</span>
+          <div class="project-card-links">
+            <span class="coming-soon">Live</span>
+          </div>
+        </div>
+        <h3 class="project-card-title">Kisii University Ajira Club</h3>
+        <p class="project-card-desc">Official website for the Kisii University Ajira Digital Club — events, resources, and membership portal.</p>
+        <div class="project-card-tags"><span>Django</span><span>CSS</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
