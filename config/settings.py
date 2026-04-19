@@ -13,7 +13,7 @@ SECRET_KEY = config(
     'SECRET_KEY',
     default='django-insecure-CHANGE-THIS-IN-PRODUCTION-make-it-long-and-random'
 )
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 _allowed_hosts = config(
     'ALLOWED_HOSTS',
