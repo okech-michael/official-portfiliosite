@@ -3,6 +3,7 @@ from django.contrib import messages
 
 
 def home(request):
+    print("[DEBUG] home() view called — method:", request.method, "| path:", request.path)
     return render(request, 'home.html')
 
 
