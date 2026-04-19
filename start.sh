@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-# Collect static files with minimal verbosity (1 = warnings + errors)
-python manage.py collectstatic --noinput --clear --verbosity 1
+# Collect static files (no --clear to avoid excessive logging)
+python manage.py collectstatic --noinput --verbosity 1
 
 # Run migrations
 python manage.py migrate --noinput
