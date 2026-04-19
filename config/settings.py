@@ -17,8 +17,8 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = [host.strip() for host in config(
     'ALLOWED_HOSTS',
-    default='localhost,127.0.0.1,*.railway.app'
-).split(',')]
+    default='localhost,127.0.0.1,*.railway.app,*.up.railway.app,railway.app,up.railway.app'
+).split(',') if host.strip()]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
