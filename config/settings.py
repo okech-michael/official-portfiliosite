@@ -95,19 +95,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 # Security settings for production
 if not DEBUG:
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-    SECURE_SSL_REDIRECT = False  # Railway handles SSL
+    SECURE_SSL_REDIRECT = False
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
-    SECURE_BROWSER_XSS_FILTER = True
-    SECURE_HSTS_SECONDS = 31536000  # 1 year
-    SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-    SECURE_HSTS_PRELOAD = True
-    SECURE_CONTENT_SECURITY_POLICY = {
-        'default-src': ("'self'",),
-        'font-src': ("'self'", 'https://fonts.googleapis.com', 'https://fonts.gstatic.com'),
-        'style-src': ("'self'", 'https://fonts.googleapis.com', "'unsafe-inline'"),
-        'img-src': ("'self'", 'data:'),
-    }
 
 # Media files (for profile image upload if needed)
 MEDIA_URL = '/media/'
