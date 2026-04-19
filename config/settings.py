@@ -13,11 +13,11 @@ SECRET_KEY = config(
     'SECRET_KEY',
     default='django-insecure-CHANGE-THIS-IN-PRODUCTION-make-it-long-and-random'
 )
-DEBUG = True
+DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = [host.strip() for host in config(
     'ALLOWED_HOSTS',
-    default='localhost,127.0.0.1,.railway.app,.up.railway.app'
+    default='localhost,127.0.0.1,*.railway.app'
 ).split(',')]
 
 INSTALLED_APPS = [
