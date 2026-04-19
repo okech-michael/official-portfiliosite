@@ -2,7 +2,7 @@
 set -e
 
 # Collect static files
-python manage.py collectstatic --noinput --clear
+python manage.py collectstatic --noinput --clear --verbosity 0
 
 # Run migrations
 python manage.py migrate --noinput
