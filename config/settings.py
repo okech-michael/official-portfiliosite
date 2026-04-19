@@ -15,10 +15,13 @@ SECRET_KEY = config(
 )
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = [host.strip() for host in config(
+_allowed_hosts = config(
     'ALLOWED_HOSTS',
     default='localhost,127.0.0.1,*.railway.app,*.up.railway.app,railway.app,up.railway.app'
-).split(',') if host.strip()]
+).strip()
+if not _allowed_hosts:
+    _allowed_hosts = 'localhost,127.0.0.1,*.railway.app,*.up.railway.app,railway.app,up.railway.app'
+ALLOWED_HOSTS = [host.strip() for host in _allowed_hosts.split(',') if host.strip()]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
