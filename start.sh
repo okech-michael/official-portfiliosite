@@ -8,6 +8,10 @@ echo "Starting portfolio app on port $PORT"
 echo "DEBUG=$DEBUG"
 echo "=========================================="
 
+# Collect static files for production
+echo "Collecting static files..."
+python manage.py collectstatic --noinput --clear
+
 # Try migrations - show all output
 echo "Running migrations..."
 python manage.py migrate --noinput
