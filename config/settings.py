@@ -13,7 +13,7 @@ SECRET_KEY = config(
     'SECRET_KEY',
     default='django-insecure-CHANGE-THIS-IN-PRODUCTION-make-it-long-and-random'
 )
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 _allowed_hosts = config(
     'ALLOWED_HOSTS',
@@ -103,6 +103,9 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
     SECURE_CONTENT_SECURITY_POLICY = {
         'default-src': ("'self'",),
+        'font-src': ("'self'", 'https://fonts.googleapis.com', 'https://fonts.gstatic.com'),
+        'style-src': ("'self'", 'https://fonts.googleapis.com', "'unsafe-inline'"),
+        'img-src': ("'self'", 'data:'),
     }
 
 # Media files (for profile image upload if needed)
