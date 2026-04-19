@@ -1,4 +1,8 @@
 #!/bin/bash
+set -e
+
+# Ensure the script runs from the repo root
+cd "$(dirname "$0")"
 
 # Get PORT from environment, default to 8000
 PORT=${PORT:-8000}
