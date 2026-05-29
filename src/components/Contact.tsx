@@ -7,6 +7,8 @@ const Contact: React.FC = () => {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     // Scroll reveal animation
@@ -35,11 +37,37 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Since this is frontend only, just show success message
-    if (formData.name && formData.email && formData.message) {
+    setLoading(true);
+    setError('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send message');
+      }
+
+      const data = await response.json();
       setSubmitted(true);
+      setFormData({ name: '', email: '', message: '' });
+      
+      // Reset success message after 5 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to send message');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -97,7 +125,11 @@ const Contact: React.FC = () => {
               <h2 className="contact-info-title">Send a Message</h2>
               {submitted ? (
                 <div className="form-message success">
-                  Message sent! I'll get back to you soon.
+                  ✓ Message sent! I'll get back to you soon.
+                </div>
+              ) : error ? (
+                <div className="form-message error">
+                  ✗ {error}
                 </div>
               ) : (
                 <form className="contact-form" onSubmit={handleSubmit}>
@@ -111,6 +143,7 @@ const Contact: React.FC = () => {
                       required
                       value={formData.name}
                       onChange={handleChange}
+                      disabled={loading}
                     />
                   </div>
                   <div className="form-group">
@@ -123,6 +156,7 @@ const Contact: React.FC = () => {
                       required
                       value={formData.email}
                       onChange={handleChange}
+                      disabled={loading}
                     />
                   </div>
                   <div className="form-group">
@@ -135,9 +169,16 @@ const Contact: React.FC = () => {
                       required
                       value={formData.message}
                       onChange={handleChange}
+                      disabled={loading}
                     ></textarea>
                   </div>
-                  <button type="submit" className="btn btn-primary btn-full">Send Message</button>
+                  <button 
+                    type="submit" 
+                    className="btn btn-primary btn-full"
+                    disabled={loading}
+                  >
+                    {loading ? 'Sending...' : 'Send Message'}
+                  </button>
                 </form>
               )}
             </div>

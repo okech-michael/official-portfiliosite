@@ -35,12 +35,13 @@ const Home: React.FC = () => {
             <div className="hero-actions">
               <Link to="/projects" className="btn btn-primary">View Projects</Link>
               <Link to="/contact" className="btn btn-ghost">Contact Me</Link>
+              <a href="/Michael_Onyango_Resume (1).docx" download className="btn btn-ghost">Download Resume</a>
             </div>
           </div>
           <div className="hero-image-wrap" data-animate="fade-left">
             <div className="image-glow"></div>
             <div className="image-frame">
-              <img src="/images/mike3.png" alt="Michael Onyango" className="profile-img" onError={(e) => {
+              <img src="/images/mikaels.jpeg" alt="Michael Onyango" className="profile-img" onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 e.currentTarget.parentElement?.classList.add('no-img');
               }} />
@@ -57,7 +58,13 @@ const Home: React.FC = () => {
         <div className="container">
           <div className="intro-inner" data-animate="fade-up">
             <p className="intro-text">
-              I'm a full-stack software engineer focused on building reliable, performant web and mobile applications. I thrive on turning complex problems into elegant, user-centric solutions that deliver real-world impact.
+              I'm a curious and self-driven builder who enjoys solving problems, learning new things, and creating meaningful digital experiences that help people and businesses grow. I value discipline, creativity, teamwork, and continuous improvement, and I approach every project with a strong sense of responsibility and attention to detail.
+            </p>
+            <p className="intro-text">
+              Beyond technology, I'm passionate about leadership, mentorship, and empowering young people through digital skills and innovation. I enjoy collaborating with people, sharing knowledge, and turning ideas into practical, impactful solutions that create real value.
+            </p>
+            <p className="intro-text">
+              I'm always open to meaningful collaborations, exciting projects, and opportunities to grow, contribute, and build something exceptional.
             </p>
           </div>
         </div>
@@ -91,6 +98,17 @@ const Home: React.FC = () => {
               <div className="highlight-icon">&#9670;</div>
               <p>Real-World Impact</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="cta-section">
+        <div className="container">
+          <div className="cta-inner" data-animate="fade-up">
+            <h2 className="cta-title">Let's <span className="accent">build something amazing</span></h2>
+            <p className="cta-subtitle">Ready to start your next project? Let's collaborate and create something exceptional.</p>
+            <Link to="/contact" className="btn btn-primary btn-lg">Get in Touch</Link>
           </div>
         </div>
       </section>

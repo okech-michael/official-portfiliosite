@@ -76,8 +76,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <ul className="nav-links" id="navLinks">
             <li><Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`} onClick={closeNav}>Home</Link></li>
             <li><Link to="/skills" className={`nav-link ${location.pathname === '/skills' ? 'active' : ''}`} onClick={closeNav}>Skills</Link></li>
+            <li><Link to="/experience" className={`nav-link ${location.pathname === '/experience' ? 'active' : ''}`} onClick={closeNav}>Experience</Link></li>
             <li><Link to="/education" className={`nav-link ${location.pathname === '/education' ? 'active' : ''}`} onClick={closeNav}>Education</Link></li>
             <li><Link to="/projects" className={`nav-link ${location.pathname === '/projects' ? 'active' : ''}`} onClick={closeNav}>Projects</Link></li>
+            <li><Link to="/case-studies" className={`nav-link ${location.pathname === '/case-studies' ? 'active' : ''}`} onClick={closeNav}>Case Studies</Link></li>
             <li><Link to="/contact" className={`nav-link nav-cta ${location.pathname === '/contact' ? 'active' : ''}`} onClick={closeNav}>Contact</Link></li>
           </ul>
         </div>

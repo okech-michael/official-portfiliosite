@@ -443,6 +443,36 @@ ul { list-style: none; }
   font-size: 0.7rem;
 }
 
+/* CTA SECTION */
+.cta-section {
+  padding: 72px 0;
+  background: linear-gradient(135deg, rgba(0, 191, 255, 0.06) 0%, rgba(59, 130, 246, 0.04) 100%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.cta-inner {
+  text-align: center;
+}
+.cta-title {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-family: var(--font-head);
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.cta-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-2);
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-lg {
+  padding: 14px 42px;
+  font-size: 1.05rem;
+}
+
 /* ─────────────────────────────────────────────────────────
    SKILLS PAGE
    ───────────────────────────────────────────────────────── */
@@ -722,6 +752,325 @@ ul { list-style: none; }
   border: 1px solid var(--border);
   padding: 2px 10px;
   border-radius: 100px;
+}
+
+/* ─────────────────────────────────────────────────────────
+   CASE STUDIES PAGE
+   ───────────────────────────────────────────────────────── */
+.case-studies-section { padding: 0 0 96px; }
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+.case-study-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s, background 0.25s;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.case-study-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,191,255,0.12);
+  background: var(--bg-card-2);
+}
+
+.case-study-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.case-study-number {
+  font-family: var(--font-head);
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--accent);
+  opacity: 0.15;
+  line-height: 1;
+}
+.case-study-category {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-glow);
+  padding: 4px 12px;
+  border-radius: 100px;
+  border: 1px solid var(--border-2);
+}
+
+.case-study-title {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.case-study-content {
+  flex: 1;
+  margin-bottom: 24px;
+}
+.case-study-block {
+  margin-bottom: 20px;
+}
+.case-study-block:last-child { margin-bottom: 0; }
+.block-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.block-text {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.65;
+}
+
+.case-study-impact {
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+.impact-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 12px;
+}
+.impact-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.impact-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--accent-glow);
+  border: 1px solid var(--border-2);
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+/* ─────────────────────────────────────────────────────────
+   EXPERIENCE PAGE
+   ───────────────────────────────────────────────────────── */
+.experience-section { padding: 0 0 96px; }
+
+.experience-timeline {
+  position: relative;
+  padding: 0;
+}
+
+.experience-item {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.experience-marker {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  position: relative;
+  z-index: 2;
+}
+
+.experience-marker::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  border-radius: 50%;
+  border: 3px solid var(--bg);
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.marker-icon {
+  font-size: 2rem;
+}
+
+.experience-card {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.experience-card:hover {
+  border-color: var(--border-2);
+  transform: translateX(8px);
+  box-shadow: 0 12px 32px rgba(0,191,255,0.08);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.experience-title-group {
+  flex: 1;
+}
+
+.experience-role {
+  font-family: var(--font-head);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.experience-company {
+  font-size: 0.95rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.experience-type {
+  color: var(--text-2);
+  font-weight: 400;
+}
+
+.experience-period {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.experience-description {
+  font-size: 0.95rem;
+  color: var(--text-2);
+  line-height: 1.7;
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-details {
+  margin-top: 0;
+}
+
+.details-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.details-list li {
+  font-size: 0.9rem;
+  color: var(--text-2);
+  line-height: 1.6;
+  padding-left: 20px;
+  position: relative;
+}
+
+.details-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+/* PREVIOUS ROLES */
+.previous-roles-section {
+  margin-top: 72px;
+  padding-top: 56px;
+  border-top: 2px solid var(--border);
+}
+
+.section-subheading {
+  font-family: var(--font-head);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: var(--text);
+  display: inline-block;
+}
+
+.previous-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.previous-role-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  transition: border-color 0.22s, transform 0.22s;
+}
+
+.previous-role-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.role-title {
+  font-family: var(--font-head);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.role-company {
+  font-size: 0.82rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.role-description {
+  font-size: 0.88rem;
+  color: var(--text-2);
+  line-height: 1.6;
 }
 
 /* ─────────────────────────────────────────────────────────

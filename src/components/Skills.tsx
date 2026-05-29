@@ -38,24 +38,39 @@ const Skills: React.FC = () => {
         <div className="container">
 
           <div className="skills-block" data-animate="fade-up">
-            <h2 className="section-heading">Technical Skills</h2>
+            <h2 className="section-heading">Technical Expertise</h2>
 
             <div className="skill-category">
-              <h3 className="category-title">Web Development</h3>
+              <h3 className="category-title">Frontend Development</h3>
               <div className="skill-tags">
-                <span className="skill-tag">HTML</span>
-                <span className="skill-tag">CSS</span>
-                <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">React</span>
+                <span className="skill-tag">React.js</span>
                 <span className="skill-tag">Next.js</span>
-                <span className="skill-tag">Django</span>
+                <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">HTML5</span>
+                <span className="skill-tag">CSS3</span>
+                <span className="skill-tag">Responsive Web Design</span>
+                <span className="skill-tag">UI/UX Design</span>
+              </div>
+            </div>
+
+            <div className="skill-category">
+              <h3 className="category-title">Backend Development</h3>
+              <div className="skill-tags">
                 <span className="skill-tag">Node.js</span>
+                <span className="skill-tag">Express.js</span>
+                <span className="skill-tag">Django</span>
+                <span className="skill-tag">FastAPI</span>
+                <span className="skill-tag">RESTful API Design</span>
+                <span className="skill-tag">Authentication Systems</span>
+                <span className="skill-tag">Backend Architecture</span>
               </div>
             </div>
 
             <div className="skill-category">
               <h3 className="category-title">Programming Languages</h3>
               <div className="skill-tags">
+                <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">TypeScript</span>
                 <span className="skill-tag">Python</span>
                 <span className="skill-tag">Java</span>
                 <span className="skill-tag">C++</span>
@@ -63,16 +78,113 @@ const Skills: React.FC = () => {
             </div>
 
             <div className="skill-category">
-              <h3 className="category-title">Specialisations</h3>
+              <h3 className="category-title">Databases & Data Management</h3>
               <div className="skill-tags">
-                <span className="skill-tag">API Development</span>
-                <span className="skill-tag">Mobile App Development</span>
-                <span className="skill-tag">Android Studio</span>
-                <span className="skill-tag">Data Analysis</span>
-                <span className="skill-tag">UI/UX Design</span>
-                <span className="skill-tag">Cybersecurity Fundamentals</span>
+                <span className="skill-tag">PostgreSQL</span>
+                <span className="skill-tag">MySQL</span>
+                <span className="skill-tag">Firebase</span>
+                <span className="skill-tag">Supabase</span>
+                <span className="skill-tag">Database Design</span>
+                <span className="skill-tag">Data Handling</span>
               </div>
             </div>
+
+            <div className="skill-category">
+              <h3 className="category-title">APIs & Third-Party Integrations</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">REST APIs</span>
+                <span className="skill-tag">Firebase Cloud Messaging</span>
+                <span className="skill-tag">SendGrid Email Integration</span>
+                <span className="skill-tag">Payment Processing</span>
+                <span className="skill-tag">API Integration</span>
+              </div>
+            </div>
+
+            <div className="skill-category">
+              <h3 className="category-title">Cloud & Deployment</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Vercel</span>
+                <span className="skill-tag">Railway</span>
+                <span className="skill-tag">Cloud Services</span>
+                <span className="skill-tag">Deployment & DevOps</span>
+              </div>
+            </div>
+
+            <div className="skill-category">
+              <h3 className="category-title">AI & Emerging Technologies</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">AI Integration</span>
+                <span className="skill-tag">Machine Learning Concepts</span>
+                <span className="skill-tag">Emerging Tech Stack</span>
+              </div>
+            </div>
+
+            <div className="skill-category">
+              <h3 className="category-title">Security & Best Practices</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Cybersecurity Fundamentals</span>
+                <span className="skill-tag">Data Protection</span>
+                <span className="skill-tag">Secure Authentication</span>
+              </div>
+            </div>
+
+            <div className="skill-category">
+              <h3 className="category-title">Tools & Version Control</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Git</span>
+                <span className="skill-tag">GitHub</span>
+                <span className="skill-tag">Development Tools</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="skills-block" data-animate="fade-up">
+            <h2 className="section-heading">Professional & Leadership Skills</h2>
+
+            <div className="skill-category">
+              <h3 className="category-title">Leadership & Team Management</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Team Leadership</span>
+                <span className="skill-tag">Team Coordination</span>
+                <span className="skill-tag">Strategic Vision</span>
+                <span className="skill-tag">Decision Making</span>
+              </div>
+            </div>
+
+            <div className="skill-category">
+              <h3 className="category-title">Communication & Community</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Technical Communication</span>
+                <span className="skill-tag">Public Speaking</span>
+                <span className="skill-tag">Community Engagement</span>
+                <span className="skill-tag">Public Relations</span>
+                <span className="skill-tag">Remote Collaboration</span>
+              </div>
+            </div>
+
+            <div className="skill-category">
+              <h3 className="category-title">Training & Mentorship</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Digital Skills Training</span>
+                <span className="skill-tag">Youth Mentorship</span>
+                <span className="skill-tag">Technical Mentorship</span>
+                <span className="skill-tag">Web Development Training</span>
+                <span className="skill-tag">Digital Literacy Education</span>
+              </div>
+            </div>
+
+            <div className="skill-category">
+              <h3 className="category-title">Professional Competencies</h3>
+              <div className="skill-tags">
+                <span className="skill-tag">Full-Stack Development</span>
+                <span className="skill-tag">Problem Solving</span>
+                <span className="skill-tag">Data Analysis</span>
+                <span className="skill-tag">Remote Work Experience</span>
+                <span className="skill-tag">Freelance Development</span>
+              </div>
+            </div>
+
           </div>
 
         </div>
