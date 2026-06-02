@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
         throw new Error(errorData.error || 'Failed to send message');
       }
 
-      const data = await response.json();
+      await response.json();
       setSubmitted(true);
       setFormData({ name: '', email: '', message: '' });
       
