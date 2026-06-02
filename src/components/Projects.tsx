@@ -106,8 +106,8 @@ const Projects: React.FC = () => {
                 <span>Node.js</span><span>TypeScript</span><span>React</span><span>Responsive Design</span>
               </div>
               <div className="project-actions">
-                <a href="#" target="_blank" rel="noopener" className="btn btn-primary btn-sm">Live Demo ↗</a>
-                <a href="https://github.com/okech-michael/kasam-construction" target="_blank" rel="noopener" className="btn btn-ghost btn-sm">View Code</a>
+                <a href="https://kasam-construction.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">Live Demo ↗</a>
+                <a href="https://github.com/okech-michael/kasam-construction" target="_blank" rel="noopener noreferrer" className="btn btn-ghost btn-sm">View Code</a>
               </div>
             </div>
           </div>
