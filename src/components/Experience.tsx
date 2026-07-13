@@ -100,7 +100,7 @@ const Experience: React.FC = () => {
 
       <section className="experience-section">
         <div className="container">
-          <h2 className="section-heading" data-animate="fade-up">Current & Recent Roles</h2>
+          <h2 className="section-heading" data-animate="fade-up">Experience</h2>
           
           <div className="experience-timeline">
             {experiences.map((exp, idx) => (
