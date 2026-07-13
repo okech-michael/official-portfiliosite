@@ -64,6 +64,20 @@ const Experience: React.FC = () => {
         "Support students in transitioning into online earning opportunities and remote work",
         "Helped create a growing ecosystem of student freelancers supporting their own financial independence"
       ]
+    },
+    {
+      id: 4,
+      role: "Digital Campaign Strategist",
+      company: "Wazee wa Mazingira CBO",
+      type: "Community Based Organisation",
+      period: "June 2026 – Present",
+      description: "Driving digital campaign strategy to amplify environmental awareness, community action, and NGO outreach through targeted online channels.",
+      achievements: [
+        "Designed and launched digital campaigns that increased community engagement and event participation",
+        "Developed content strategies for social media, newsletters, and advocacy platforms",
+        "Collaborated with local leaders to promote environmental programs and youth involvement",
+        "Improved online visibility and outreach for Wazee wa Mazingira community initiatives"
+      ]
     }
   ];
 
