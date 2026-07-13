@@ -82,7 +82,7 @@ const Experience: React.FC = () => {
   ];
 
   const previousRoles = [
-    { role: "Vice Chairperson", description: "Supported leadership operations, coordination, and training initiatives", company: "Ajira Digital Club – Kisii University" },
+    { role: "Vice Chairperson", description: "Supported leadership operations, coordination, and training initiatives", company: "Ajira Digital Club – Kisii University", period: "June 2025 – Nov 2025" },
     { role: "Publicity Secretary", description: "Managed communications, outreach, and digital engagement campaigns", company: "Ajira Digital Club – Kisii University" }
   ];
 
@@ -146,6 +146,7 @@ const Experience: React.FC = () => {
                 <div key={idx} className="previous-role-card">
                   <h4 className="role-title">{role.role}</h4>
                   <p className="role-company">{role.company}</p>
+                  {role.period && <p className="role-period">{role.period}</p>}
                   <p className="role-description">{role.description}</p>
                 </div>
               ))}
