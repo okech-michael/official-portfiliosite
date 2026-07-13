@@ -165,7 +165,7 @@ const Projects: React.FC = () => {
 
           <div className="featured-card" data-animate="fade-up">
             <div className="featured-card-preview">
-              <img src="/images/mc-maticha-website.jpg" alt="MC Maticha Events" className="project-screenshot" />
+              <img src="/images/mc-maticha.jpg" alt="MC Maticha Events" className="project-screenshot" />
             </div>
             <div className="featured-card-info">
               <span className="project-label">Featured · Events</span>
