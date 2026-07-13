@@ -41,7 +41,7 @@ const Home: React.FC = () => {
           <div className="hero-image-wrap" data-animate="fade-left">
             <div className="image-glow"></div>
             <div className="image-frame">
-              <img src="/images/mikaels.jpeg" alt="Michael Onyango" className="profile-img" onError={(e) => {
+              <img src="/images/myself.jfif" alt="Michael Onyango" className="profile-img" onError={(e) => {
                 e.currentTarget.style.display = 'none';
                 e.currentTarget.parentElement?.classList.add('no-img');
               }} />
