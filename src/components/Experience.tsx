@@ -55,7 +55,7 @@ const Experience: React.FC = () => {
       role: "Chairperson",
       company: "Ajira Digital Club",
       type: "Kisii University",
-      period: "2024 – Present",
+      period: "Nov 2025 – April 2026",
       description: "Leading a student digital empowerment organization focused on freelancing, software development, and digital career readiness.",
       achievements: [
         "Lead strategic direction for student digital skills development programs",
