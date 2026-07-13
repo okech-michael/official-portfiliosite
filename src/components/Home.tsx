@@ -53,24 +53,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* INTRO */}
-      <section className="intro-section">
-        <div className="container">
-          <div className="intro-inner" data-animate="fade-up">
-            <p className="intro-text">
-              I'm a curious and self-driven builder who enjoys solving problems, learning new things, and creating meaningful digital experiences that help people and businesses grow. I value discipline, creativity, teamwork, and continuous improvement, and I approach every project with a strong sense of responsibility and attention to detail.
-            </p>
-            <p className="intro-text">
-              Beyond technology, I'm passionate about leadership, mentorship, and empowering young people through digital skills and innovation. I enjoy collaborating with people, sharing knowledge, and turning ideas into practical, impactful solutions that create real value.
-            </p>
-            <p className="intro-text">
-              I'm always open to meaningful collaborations, exciting projects, and opportunities to grow, contribute, and build something exceptional.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* HIGHLIGHTS */}
+      {/* HIGHLIGHTS */
       <section className="highlights-section">
         <div className="container">
           <div className="highlights-grid" data-animate="fade-up">
