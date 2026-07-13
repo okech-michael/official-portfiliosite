@@ -23,31 +23,17 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      id: 1,
-      role: "Digital Skills Trainer",
-      company: "Nyamira County ICT Hub",
-      period: "Nov 2025 – April 2026",
-      description: "Delivered structured digital training programs focused on software development, freelancing, and workplace digital transformation. Empowered youth and professionals with practical, job-ready skills.",
+      id: 4,
+      role: "Digital Campaign Strategist",
+      company: "Wazee wa Mazingira CBO",
+      type: "Community Based Organisation",
+      period: "June 2026 – Present",
+      description: "Driving digital campaign strategy to amplify environmental awareness, community action, and NGO outreach through targeted online channels.",
       achievements: [
-        "Trained 300+ youth in digital skills, including web development, transcription, and online work readiness",
-        "Supported 50+ web development trainees in securing internships in Nairobi and Mombasa tech ecosystems",
-        "Mentored 70+ learners into successful freelance careers on platforms such as GoTranscript and Upwork",
-        "Delivered corporate training for county employees on AI tools for professionals and interpersonal workplace skills, improving productivity and digital adoption"
-      ]
-    },
-    {
-      id: 2,
-      role: "Chairperson",
-      company: "Ajira Digital Club",
-      type: "Kisii University",
-      period: "Nov 2025 – April 2026",
-      description: "Leading a student digital empowerment organization focused on freelancing, software development, and digital career readiness.",
-      achievements: [
-        "Lead strategic direction for student digital skills development programs",
-        "Organize training sessions on web development, online work, and cybersecurity awareness",
-        "Promote online safety education and responsible digital engagement",
-        "Support students in transitioning into online earning opportunities and remote work",
-        "Helped create a growing ecosystem of student freelancers supporting their own financial independence"
+        "Designed and launched digital campaigns that increased community engagement and event participation",
+        "Developed content strategies for social media, newsletters, and advocacy platforms",
+        "Collaborated with local leaders to promote environmental programs and youth involvement",
+        "Improved online visibility and outreach for Wazee wa Mazingira community initiatives"
       ]
     },
     {
@@ -66,24 +52,38 @@ const Experience: React.FC = () => {
       ]
     },
     {
-      id: 4,
-      role: "Digital Campaign Strategist",
-      company: "Wazee wa Mazingira CBO",
-      type: "Community Based Organisation",
-      period: "June 2026 – Present",
-      description: "Driving digital campaign strategy to amplify environmental awareness, community action, and NGO outreach through targeted online channels.",
+      id: 2,
+      role: "Chairperson",
+      company: "Ajira Digital Club",
+      type: "Kisii University",
+      period: "Nov 2025 – April 2026",
+      description: "Leading a student digital empowerment organization focused on freelancing, software development, and digital career readiness.",
       achievements: [
-        "Designed and launched digital campaigns that increased community engagement and event participation",
-        "Developed content strategies for social media, newsletters, and advocacy platforms",
-        "Collaborated with local leaders to promote environmental programs and youth involvement",
-        "Improved online visibility and outreach for Wazee wa Mazingira community initiatives"
+        "Lead strategic direction for student digital skills development programs",
+        "Organize training sessions on web development, online work, and cybersecurity awareness",
+        "Promote online safety education and responsible digital engagement",
+        "Support students in transitioning into online earning opportunities and remote work",
+        "Helped create a growing ecosystem of student freelancers supporting their own financial independence"
+      ]
+    },
+    {
+      id: 1,
+      role: "Digital Skills Trainer",
+      company: "Nyamira County ICT Hub",
+      period: "Nov 2025 – April 2026",
+      description: "Delivered structured digital training programs focused on software development, freelancing, and workplace digital transformation. Empowered youth and professionals with practical, job-ready skills.",
+      achievements: [
+        "Trained 300+ youth in digital skills, including web development, transcription, and online work readiness",
+        "Supported 50+ web development trainees in securing internships in Nairobi and Mombasa tech ecosystems",
+        "Mentored 70+ learners into successful freelance careers on platforms such as GoTranscript and Upwork",
+        "Delivered corporate training for county employees on AI tools for professionals and interpersonal workplace skills, improving productivity and digital adoption"
       ]
     }
   ];
 
   const previousRoles = [
-    { role: "Publicity Secretary", description: "Managed communications, outreach, and digital engagement campaigns", company: "Ajira Digital Club – Kisii University", period: "March 2025 – June 2025" },
-    { role: "Vice Chairperson", description: "Supported leadership operations, coordination, and training initiatives", company: "Ajira Digital Club – Kisii University", period: "June 2025 – Nov 2025" }
+    { role: "Vice Chairperson", description: "Supported leadership operations, coordination, and training initiatives", company: "Ajira Digital Club – Kisii University", period: "June 2025 – Nov 2025" },
+    { role: "Publicity Secretary", description: "Managed communications, outreach, and digital engagement campaigns", company: "Ajira Digital Club – Kisii University", period: "March 2025 – June 2025" }
   ];
 
   return (
