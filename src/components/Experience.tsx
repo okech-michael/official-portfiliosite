@@ -24,21 +24,6 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       id: 1,
-      role: "Co-Founder & CEO",
-      company: "Terrasept Solutions",
-      type: "Technology Company",
-      period: "Present",
-      description: "Co-founder and chief executive responsible for driving the strategic direction, growth, and execution of Terrasept Solutions. Leads the company's vision, product development strategy, and business expansion across digital solutions and software development services.",
-      responsibilities: [
-        "Lead overall company strategy, product direction, and technical execution across web and software projects",
-        "Oversee development of client solutions including websites, platforms, and digital systems",
-        "Drive business growth, client acquisition, and service delivery standards",
-        "Coordinate technical teams and project execution workflows",
-        "Establish operational structure for scaling digital service offerings"
-      ]
-    },
-    {
-      id: 2,
       role: "Digital Skills Trainer",
       company: "Nyamira County ICT Hub",
       period: "Nov 2025 – April 2026",
@@ -51,7 +36,7 @@ const Experience: React.FC = () => {
       ]
     },
     {
-      id: 3,
+      id: 2,
       role: "Chairperson",
       company: "Ajira Digital Club",
       type: "Kisii University",
@@ -63,6 +48,21 @@ const Experience: React.FC = () => {
         "Promote online safety education and responsible digital engagement",
         "Support students in transitioning into online earning opportunities and remote work",
         "Helped create a growing ecosystem of student freelancers supporting their own financial independence"
+      ]
+    },
+    {
+      id: 3,
+      role: "Co-Founder & CEO",
+      company: "Terrasept Solutions",
+      type: "Technology Company",
+      period: "Feb 2026 – Present",
+      description: "Co-founder and chief executive responsible for driving the strategic direction, growth, and execution of Terrasept Solutions. Leads the company's vision, product development strategy, and business expansion across digital solutions and software development services.",
+      responsibilities: [
+        "Lead overall company strategy, product direction, and technical execution across web and software projects",
+        "Oversee development of client solutions including websites, platforms, and digital systems",
+        "Drive business growth, client acquisition, and service delivery standards",
+        "Coordinate technical teams and project execution workflows",
+        "Establish operational structure for scaling digital service offerings"
       ]
     },
     {
@@ -82,8 +82,8 @@ const Experience: React.FC = () => {
   ];
 
   const previousRoles = [
-    { role: "Vice Chairperson", description: "Supported leadership operations, coordination, and training initiatives", company: "Ajira Digital Club – Kisii University", period: "June 2025 – Nov 2025" },
-    { role: "Publicity Secretary", description: "Managed communications, outreach, and digital engagement campaigns", company: "Ajira Digital Club – Kisii University" }
+    { role: "Publicity Secretary", description: "Managed communications, outreach, and digital engagement campaigns", company: "Ajira Digital Club – Kisii University", period: "March 2025 – June 2025" },
+    { role: "Vice Chairperson", description: "Supported leadership operations, coordination, and training initiatives", company: "Ajira Digital Club – Kisii University", period: "June 2025 – Nov 2025" }
   ];
 
   return (
