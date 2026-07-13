@@ -105,6 +105,8 @@ const Skills: React.FC = () => {
               <div className="skill-tags">
                 <span className="skill-tag">Vercel</span>
                 <span className="skill-tag">Railway</span>
+                <span className="skill-tag">AWS</span>
+                <span className="skill-tag">Azure</span>
                 <span className="skill-tag">Cloud Services</span>
                 <span className="skill-tag">Deployment & DevOps</span>
               </div>
