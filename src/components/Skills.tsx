@@ -90,13 +90,13 @@ const Skills: React.FC = () => {
             </div>
 
             <div className="skill-category">
-              <h3 className="category-title">APIs & Third-Party Integrations</h3>
+              <h3 className="category-title">APIs & Integrations</h3>
               <div className="skill-tags">
-                <span className="skill-tag">REST APIs</span>
+                <span className="skill-tag">REST API Design</span>
                 <span className="skill-tag">Firebase Cloud Messaging</span>
-                <span className="skill-tag">SendGrid Email Integration</span>
-                <span className="skill-tag">Payment Processing</span>
-                <span className="skill-tag">API Integration</span>
+                <span className="skill-tag">SendGrid</span>
+                <span className="skill-tag">Stripe Payments</span>
+                <span className="skill-tag">Third-Party SDKs</span>
               </div>
             </div>
 
@@ -105,28 +105,27 @@ const Skills: React.FC = () => {
               <div className="skill-tags">
                 <span className="skill-tag">Vercel</span>
                 <span className="skill-tag">Railway</span>
-                <span className="skill-tag">AWS</span>
-                <span className="skill-tag">Azure</span>
-                <span className="skill-tag">Cloud Services</span>
-                <span className="skill-tag">Deployment & DevOps</span>
+                <span className="skill-tag">AWS S3</span>
+                <span className="skill-tag">Azure Static Web Apps</span>
+                <span className="skill-tag">Docker</span>
               </div>
             </div>
 
             <div className="skill-category">
-              <h3 className="category-title">AI & Emerging Technologies</h3>
+              <h3 className="category-title">AI & Automation</h3>
               <div className="skill-tags">
                 <span className="skill-tag">AI Integration</span>
-                <span className="skill-tag">Machine Learning Concepts</span>
-                <span className="skill-tag">Emerging Tech Stack</span>
+                <span className="skill-tag">Automated Workflows</span>
+                <span className="skill-tag">Data Automation</span>
               </div>
             </div>
 
             <div className="skill-category">
               <h3 className="category-title">Security & Best Practices</h3>
               <div className="skill-tags">
-                <span className="skill-tag">Cybersecurity Fundamentals</span>
-                <span className="skill-tag">Data Protection</span>
                 <span className="skill-tag">Secure Authentication</span>
+                <span className="skill-tag">Data Protection</span>
+                <span className="skill-tag">Code Review Practices</span>
               </div>
             </div>
 
@@ -135,7 +134,9 @@ const Skills: React.FC = () => {
               <div className="skill-tags">
                 <span className="skill-tag">Git</span>
                 <span className="skill-tag">GitHub</span>
-                <span className="skill-tag">Development Tools</span>
+                <span className="skill-tag">ESLint</span>
+                <span className="skill-tag">Prettier</span>
+                <span className="skill-tag">VS Code</span>
               </div>
             </div>
 
