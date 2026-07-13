@@ -41,7 +41,7 @@ const Experience: React.FC = () => {
       id: 2,
       role: "Digital Skills Trainer",
       company: "Nyamira County ICT Hub",
-      period: "2024 – Present",
+      period: "Nov 2025 – April 2026",
       description: "Delivered structured digital training programs focused on software development, freelancing, and workplace digital transformation. Empowered youth and professionals with practical, job-ready skills.",
       achievements: [
         "Trained 300+ youth in digital skills, including web development, transcription, and online work readiness",
