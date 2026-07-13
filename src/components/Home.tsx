@@ -30,8 +30,8 @@ const Home: React.FC = () => {
           <div className="hero-text" data-animate="fade-up">
             <div className="hero-badge">Available for opportunities</div>
             <h1 className="hero-name">Michael<br /><span className="accent">Onyango</span></h1>
-            <p className="hero-title">Software Engineer</p>
-            <p className="hero-tagline">Building scalable digital solutions with clean code and intelligent systems.</p>
+            <p className="hero-title">I build digital solutions that help businesses grow, automate, and succeed online.</p>
+            <p className="hero-tagline">From modern websites and mobile apps to custom business systems, I help organizations streamline operations, reach more customers, and turn ideas into impactful digital products.</p>
             <div className="hero-actions">
               <Link to="/projects" className="btn btn-primary">View Projects</Link>
               <Link to="/contact" className="btn btn-ghost">Contact Me</Link>
