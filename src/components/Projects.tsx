@@ -199,11 +199,11 @@ const Projects: React.FC = () => {
 
           <div className="featured-card" data-animate="fade-up">
             <div className="featured-card-preview">
-              <img src="/images/Jibar-technologies.jpg" alt="Jibra Technologies" className="project-screenshot" />
+              <img src="/images/Jibar-technologies.jpg" alt="Jibar Technologies" className="project-screenshot" />
             </div>
             <div className="featured-card-info">
               <span className="project-label">Featured · Technology</span>
-              <h3 className="project-title">Jibra Technologies Website</h3>
+              <h3 className="project-title">Jibar Technologies Website</h3>
               <p className="project-desc">A technology services website built to present solutions, expertise, and contact pathways for potential clients.</p>
               <div className="project-stack">
                 <span>Technology</span><span>Services</span><span>Vercel</span><span>Responsive</span>
@@ -371,8 +371,8 @@ const Projects: React.FC = () => {
                   <a href="https://jibar-technologies.vercel.app/" target="_blank" rel="noopener" title="Live Site">Live ↗</a>
                 </div>
               </div>
-              <h3 className="project-card-title">Jibra Technologies Website</h3>
-              <p className="project-card-desc">A technology services website created to promote Jibra Technologies, highlighting solutions, skills, and client engagement.</p>
+              <h3 className="project-card-title">Jibar Technologies Website</h3>
+              <p className="project-card-desc">A technology services website created to promote Jibar Technologies, highlighting solutions, skills, and client engagement.</p>
               <div className="project-card-tags"><span>Tech</span><span>Services</span><span>Vercel</span></div>
             </div>
 
