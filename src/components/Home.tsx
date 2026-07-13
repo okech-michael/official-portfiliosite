@@ -53,7 +53,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* HIGHLIGHTS */
+      {/* HIGHLIGHTS */}
       <section className="highlights-section">
         <div className="container">
           <div className="highlights-grid" data-animate="fade-up">
