@@ -9,7 +9,7 @@ Add these to your `.env.local` file (for local development) and to Vercel enviro
 ```
 EMAIL_USER=your-email@gmail.com
 EMAIL_PASSWORD=your-app-specific-password
-RECIPIENT_EMAIL=okechmichael2004@gmail.com
+RECIPIENT_EMAIL=okechonyango365@gmail.com
 ```
 
 ### Setting up Gmail App Password

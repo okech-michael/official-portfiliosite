@@ -98,7 +98,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="footer-links">
             <a href="https://github.com/okech-michael" target="_blank" rel="noopener">GitHub</a>
             <a href="https://www.linkedin.com/in/michael-onyango-179291372/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bru5S8zKoRlaWgWApBikV4A%3D%3D" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="mailto:okechmichael2004@gmail.com">Email</a>
+            <a href="mailto:okechonyango365@gmail.com">Email</a>
           </div>
         </div>
       </footer>

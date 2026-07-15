@@ -96,7 +96,7 @@ const Contact: React.FC = () => {
                 <span className="contact-icon">&#9993;</span>
                 <div>
                   <p className="contact-label">Email</p>
-                  <a href="mailto:okechmichael2004@gmail.com" className="contact-value">okechmichael2004@gmail.com</a>
+                  <a href="mailto:okechonyango365@gmail.com" className="contact-value">okechonyango365@gmail.com</a>
                 </div>
               </div>
               <div className="contact-item">
